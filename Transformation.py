@@ -1,57 +1,94 @@
+# ########################################################################################
+# Python Script to ArcGIS
 # Description: Creates a custom geographic transformation in the default directory.
-# References: http://desktop.arcgis.com/en/arcmap/10.3/tools/data-management-toolbox/create-custom-geographic-transformation.htm
-# Michel Metran (www.michelmetran.com)
-# ##############################################################################################
+# C:\Users\[USER]\AppData\Roaming\ESRI\Desktop10.5\ArcToolbox\CustomTransformations
+# Michel Metran (MichelMetran.com)
 
+# ########################################################################################
 # Import System Modules
+import os
 import arcpy
 
+# ########################################################################################
+# Transformation between SAD69 to WGS84
+try:
+    geoTransfmName = "SAD69_para_WGS84"
+    
+    # Set Parameters
+    x = -66.87
+    y = +4.37
+    z = -38.52
+    
+    # Create a Spatial Reference Objects (Input/Output)
+    inGCS = arcpy.SpatialReference("South American Datum 1969")
+    outGCS = arcpy.SpatialReference("WGS 1984")
+    
+    # Custom Transformation
+    customGeoTransfm = "GEOGTRAN[METHOD['Geocentric_Translation'],\
+            PARAMETER['X_Axis_Translation',"+str(x)+"],\
+            PARAMETER['Y_Axis_Translation',"+str(y)+"],\
+            PARAMETER['Z_Axis_Translation',"+str(z)+"]]"
+    
+    arcpy.CreateCustomGeoTransformation_management(geoTransfmName,
+                                                   inGCS, outGCS,
+                                                   customGeoTransfm)
+    
+except arcpy.ExecuteError:
+    print arcpy.GetMessages()
 
-# ##############################################################################################
-# Set the variables
-geoTransfmName = "SAD69_para_WGS84"
+# ########################################################################################
+# Transformation between SAD69 to Córrego Alegre
+try:
+    geoTransfmName = "SAD69_para_CórregoAlegre"
+    
+    # Set Parameters
+    x = +138.70
+    y = -164.40
+    z = -34.40
+    
+    # Create a Spatial Reference Objects (Input/Output)
+    inGCS = arcpy.SpatialReference("South American Datum 1969")
+    outGCS = arcpy.SpatialReference("Corrego Alegre")
+    
+    # Custom Transformation
+    customGeoTransfm = "GEOGTRAN[METHOD['Geocentric_Translation'],\
+            PARAMETER['X_Axis_Translation',"+str(x)+"],\
+            PARAMETER['Y_Axis_Translation',"+str(y)+"],\
+            PARAMETER['Z_Axis_Translation',"+str(z)+"]]"
+    
+    arcpy.CreateCustomGeoTransformation_management(geoTransfmName,
+                                                   inGCS, outGCS,
+                                                   customGeoTransfm)  
 
-# Create a Spatial Reference Object for GCS Input
-inGCS = arcpy.SpatialReference("South American Datum 1969")
+except arcpy.ExecuteError:
+    print arcpy.GetMessages()
+    
+# ########################################################################################
+# Transformation between SAD69 to SIRGAS2000
+try:
+    geoTransfmName = "SAD69_para_SIRGAS2000"
+    
+    # Set Parameters
+    x = -67.348
+    y = +3.879
+    z = -38.223
+    
+    # Create a Spatial Reference Objects (Input/Output)
+    inGCS = arcpy.SpatialReference("South American Datum 1969")
+    outGCS = arcpy.SpatialReference("SIRGAS 2000")
+    
+    customGeoTransfm = "GEOGTRAN[METHOD['Geocentric_Translation'],\
+            PARAMETER['X_Axis_Translation',"+str(x)+"],\
+            PARAMETER['Y_Axis_Translation',"+str(y)+"],\
+            PARAMETER['Z_Axis_Translation',"+str(z)+"]]"
+    
+    arcpy.CreateCustomGeoTransformation_management(geoTransfmName,
+                                                   inGCS, outGCS,
+                                                   customGeoTransfm)
+    
+except arcpy.ExecuteError:
+    print arcpy.GetMessages()
+    
+# ########################################################################################
 
-# Create a Spatial Reference Object for GCS Output
-outGCS = arcpy.SpatialReference("WGS 1984")
-
-# Set Parameters
-customGeoTransfm ="GEOGTRAN[METHOD['Geocentric_Translation'],PARAMETER['X_Axis_Translation',-66.87],PARAMETER['Y_Axis_Translation',+4.37],PARAMETER['Z_Axis_Translation',-38.52]]"
-
-# Aplly Fuction
-arcpy.CreateCustomGeoTransformation_management(geoTransfmName, inGCS, outGCS, customGeoTransfm)
-
-# ##############################################################################################
-# Set the variables
-geoTransfmName = "SAD69_para_CorregoAlegre"
-
-# Create a Spatial Reference Object for GCS Input
-inGCS = arcpy.SpatialReference("South American Datum 1969")
-
-# Create a Spatial Reference Object for GCS Output
-outGCS = arcpy.SpatialReference("Corrego Alegre")
-
-# Set Parameters
-customGeoTransfm ="GEOGTRAN[METHOD['Geocentric_Translation'],PARAMETER['X_Axis_Translation',+138.70],PARAMETER['Y_Axis_Translation',-164.40],PARAMETER['Z_Axis_Translation',-34.40]]"
-
-# Aplly Fuction
-arcpy.CreateCustomGeoTransformation_management(geoTransfmName, inGCS, outGCS, customGeoTransfm)
-
-# ############################################################################
-# Set the variables
-geoTransfmName = "SAD69_para_SIRGAS2000"
-
-# Create a Spatial Reference Object for GCS Input
-inGCS = arcpy.SpatialReference("South American Datum 1969")
-
-# Create a Spatial Reference Object for GCS Output
-outGCS = arcpy.SpatialReference("SIRGAS 2000")
-
-# Set Parameters
-customGeoTransfm ="GEOGTRAN[METHOD['Geocentric_Translation'],PARAMETER['X_Axis_Translation',-67.348],PARAMETER['Y_Axis_Translation',+3.879],PARAMETER['Z_Axis_Translation',-38.223]]"
-
-# Aplly Fuction
-arcpy.CreateCustomGeoTransformation_management(geoTransfmName, inGCS, outGCS, customGeoTransfm)
-
+print 'End'

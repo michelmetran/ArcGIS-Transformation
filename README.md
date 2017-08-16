@@ -1,5 +1,5 @@
 # ArcGIS-Transformation
-Cria parâmetros de transformações entre os datuns utilizados no Brasil conforme dados oficiais.
+Cria parâmetros de transformações entre os datum utilizados no Brasil conforme dados oficiais.
 
 ## Para que serve?
 Existe muita confusão na converção e projeção de arquivos espaciais (*shapefiles* e *featura class*) no ArcGIS.
@@ -11,4 +11,5 @@ Fazer o download (ou cópia) do arquivo 'Transformation.py' e executar.
 - ArcGIS instalado;
 
 ## Referências
-This is [an example](http://example.com/ "Title") inline link.
+Sobre a [criação de transformações entre datum customizada no ArcGIS](http://desktop.arcgis.com/en/arcmap/10.3/tools/data-management-toolbox/create-custom-geographic-transformation.htm).
+Sobre [questões de geodésia definidas pelo IBGE] (http://www.ibge.gov.br/home/geociencias/geodesia/pmrg/faq.shtm).
