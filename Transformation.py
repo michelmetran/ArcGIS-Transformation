@@ -2,7 +2,7 @@
 # Description: Creates a custom geographic transformation in the default directory.
 # http://desktop.arcgis.com/en/arcmap/10.3/tools/data-management-toolbox/create-custom-geographic-transformation.htm
 # Piracicaba, 19 de Setembro de 2016
-# Michel Metran
+# Michel Metran (www.michelmetran.com)
 
 
 # Import System Modules
@@ -24,7 +24,6 @@ customGeoTransfm ="GEOGTRAN[METHOD['Geocentric_Translation'],PARAMETER['X_Axis_T
 arcpy.CreateCustomGeoTransformation_management(geoTransfmName, inGCS, outGCS, customGeoTransfm)
 
 # ############################################################################
-# ############################################################################
 
 # Set the variables
 geoTransfmName = "SAD69_para_CorregoAlegre"
@@ -41,7 +40,6 @@ customGeoTransfm ="GEOGTRAN[METHOD['Geocentric_Translation'],PARAMETER['X_Axis_T
 # Aplly Fuction
 arcpy.CreateCustomGeoTransformation_management(geoTransfmName, inGCS, outGCS, customGeoTransfm)
 
-# ############################################################################
 # ############################################################################
 
 # Set the variables
