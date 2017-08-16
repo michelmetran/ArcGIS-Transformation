@@ -1,3 +1,5 @@
+# coding=UTF-8
+
 # ########################################################################################
 # Python Script to ArcGIS
 # Description: Creates a custom geographic transformation in the default directory.
@@ -36,9 +38,9 @@ except arcpy.ExecuteError:
     print arcpy.GetMessages()
 
 # ########################################################################################
-# Transformation between SAD69 to C髍rego Alegre
+# Transformation between SAD69 to C贸rrego Alegre
 try:
-    geoTransfmName = "SAD69_para_C髍regoAlegre"
+    geoTransfmName = "SAD69_para_C贸rregoAlegre"
     
     # Set Parameters
     x = +138.70
@@ -115,9 +117,9 @@ except arcpy.ExecuteError:
     print arcpy.GetMessages()
 
 # ########################################################################################
-# Transformation between SIRGAS2000 to C髍rego Alegre
+# Transformation between SIRGAS2000 to C贸rrego Alegre
 try:
-    geoTransfmName = "SIRGAS2000_para_C髍regoAlegre"
+    geoTransfmName = "SIRGAS2000_para_C贸rregoAlegre"
     
     # Set Parameters
     x = +206.048
@@ -141,9 +143,9 @@ except arcpy.ExecuteError:
     print arcpy.GetMessages()
     
 # ########################################################################################
-# Transformation between C髍rego Alegre to WGS84
+# Transformation between C贸rrego Alegre to WGS84
 try:
-    geoTransfmName = "C髍regoAlegre_para_WGS84"
+    geoTransfmName = "C贸rregoAlegre_para_WGS84"
     
     # Set Parameters
     x = -205.57
