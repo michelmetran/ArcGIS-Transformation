@@ -23,6 +23,7 @@ Veja também a lista de [colaboradores](https://github.com/michelmetran/ArcGIS-T
 
 ## Licença
 Esse projeto é licenciado sob a 'MIT License'.
+
 Veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
 
 ## Referências
