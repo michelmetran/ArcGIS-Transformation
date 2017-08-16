@@ -13,7 +13,7 @@ O objetivo desse *script* é facilitar tais conversões, criando no ArcGIS, os p
 ![Transformation](ScreenShots/Transformation.png)
 
 ## Como "instalar" e usar?
-Fazer o *download* (ou cópia) do arquivo [Transformation.py](Transformation.py) e executar.
+Fazer o *download* (ou cópia) do arquivo [Transformation.py](Scripts/Transformation.py) e executar.
 
 ## Pré-requisitos
 - ArcGIS instalado;
