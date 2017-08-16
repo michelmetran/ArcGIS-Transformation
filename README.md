@@ -2,11 +2,15 @@
 Cria parâmetros de transformações entre os datum comumente utilizados no Brasil conforme dados oficiais.
 
 ## Para que serve?
-Existe muita confusão na converção e projeção de arquivos espaciais (*shapefiles* e *feature class*) no ArcGIS.
+Existe muita confusão na conversão e projeção de arquivos espaciais (*shapefiles* e *feature class*) no ArcGIS.
 Por *default*, o ArcGIS dispõe de 14 maneiras diferentes para converter feições entre SAD69 e WGS84. A versão mais correta para se utilizar é a *SAD_1969_To_WGS_1984_14*.
 
 *E para outros datum? Tais como Córrego Alegre e SIRGAS2000?*
-O objetivo desse *script* é facilitar tais conversões, criando no ArcGIS, os parâmetros de transformação corretos, definidos pelo IBGE e outras instituições de pesquisa. Após criados, os parâmetros de transformação estarão disponíveis na ferramenta *Data Management toolbox/**Project***, do *ArcToolBox*.
+O objetivo desse *script* é facilitar tais conversões, criando no ArcGIS, os parâmetros de transformação corretos, definidos pelo IBGE e outras instituições de pesquisa. Após criados, os parâmetros de transformação estarão disponíveis na ferramenta *Data Management toolbox/**Project***, do *ArcToolBox*, e nos parâmetros de transformação entre datum no mesmo *data-frame*, no **ArcMap**.
+
+![Project](ScreenShots/Project.jpg)
+
+![Transformation](ScreenShots/Transformation.jpg)
 
 ## Como "instalar" e usar?
 Fazer o *download* (ou cópia) do arquivo [Transformation.py](Transformation.py) e executar.
