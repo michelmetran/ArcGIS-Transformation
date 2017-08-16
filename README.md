@@ -8,9 +8,8 @@ Por *default*, o ArcGIS dispõe de 14 maneiras diferentes para converter feiçõ
 *E para outros datum? Tais como Córrego Alegre e SIRGAS2000?*
 O objetivo desse *script* é facilitar tais conversões, criando no ArcGIS, os parâmetros de transformação corretos, definidos pelo IBGE e outras instituições de pesquisa.
 
-## Como usar?
+## Como "instalar" e usar?
 Fazer o *download* (ou cópia) do arquivo [Transformation.py](Transformation.py) e executar.
-
 
 ## Pré-requisitos
 - ArcGIS instalado;
@@ -18,12 +17,13 @@ Fazer o *download* (ou cópia) do arquivo [Transformation.py](Transformation.py)
 Testado com as versões 10.3 e 10.5.
 
 ## Autor
-* **Michel Metran** - [MM.com](https://michelmetran.com)
+* **Michel Metran**, veja [outros projetos](https://michelmetran.com)
 
-Veja também a lista de [colaboradores](https://github.com/michelmetran/ArcGIS-Transformation/graphs/contributors) que auxiliaram nesse projeto.
+Veja também a lista de [colaboradores](https://github.com/michelmetran/ArcGIS-Transformation/settings/collaboration) que auxiliaram nesse projeto.
 
 ## Licença
-Esse projeto é licenciado sob a 'MIT License'. Veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+Esse projeto é licenciado sob a 'MIT License'.
+Veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
 
 ## Referências
 Sobre a [criação de transformações entre datum customizada no ArcGIS](http://desktop.arcgis.com/en/arcmap/10.5/tools/data-management-toolbox/create-custom-geographic-transformation.htm).
