@@ -2,7 +2,7 @@
 Cria parâmetros de Transformações entre os datuns utilizados no Brasil
 
 ## Para que serve?
-Existe muita confusão entre 
+Existe muita confusão entre Teste!!
 
 ## Como usar?
 Fazer o download (ou cópia) do arquivo 'Transformation.py' e executar.
