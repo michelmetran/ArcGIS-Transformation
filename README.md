@@ -28,7 +28,7 @@ Veja também a lista de [colaboradores](https://github.com/michelmetran/ArcGIS-T
 ## Licença
 Esse projeto é licenciado sob a 'MIT License'.
 
-Veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ## Referências
 1.	Sobre a [criação de transformações entre datum customizada no ArcGIS](http://desktop.arcgis.com/en/arcmap/10.5/tools/data-management-toolbox/create-custom-geographic-transformation.htm).
