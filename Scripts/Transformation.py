@@ -1,22 +1,28 @@
-# coding=UTF-8
-
-# ########################################################################################
-# Python Script to ArcGIS
+# coding: utf8
+'''
+# -------------------------------------------------------------------------------------------------------
+# TRANSFORMAÇÕES CUSTOMIZADAS ENTRE DATUM
+# -------------------------------------------------------------------------------------------------------
 # Description: Creates a custom geographic transformation in the default directory.
 # C:\Users\[USER]\AppData\Roaming\ESRI\Desktop[VERSION]\ArcToolbox\CustomTransformations
+'''
 
-# ########################################################################################
-# Import System Modules
+# -------------------------------------------------------------------------------------------------------
+# Módulos e Codificação
 import os
+import sys
 import numpy as np
 import arcpy
 
-# ########################################################################################
-# ArcGIS: Enviromental Settings
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+# -------------------------------------------------------------------------------------------------------
+# Variáveis de Ambiente do ArcGIS
 arcpy.ResetEnvironments()
 arcpy.env.overwriteOutput = True
 
-# ########################################################################################
+# -------------------------------------------------------------------------------------------------------
 # Table with Parameters of Datum Transformation
 tab = [['Name','inGCS', 'outGCS','X', 'Y', 'Z'],\
        ['SAD69_para_WGS84','South American Datum 1969', 'WGS 1984', -66.87, +4.37, -38.52],\
@@ -29,7 +35,7 @@ tab = [['Name','inGCS', 'outGCS','X', 'Y', 'Z'],\
 transformations = np.array(tab)
 n_linhas = transformations.shape[0]
 
-# ########################################################################################
+# -------------------------------------------------------------------------------------------------------
 # Loop Table
 for i in range(1, n_linhas):
 # Informations
@@ -64,7 +70,10 @@ for i in range(1, n_linhas):
     except arcpy.ExecuteError:
         print arcpy.GetMessages()
 
-# ########################################################################################
-# Ending
+
+# -------------------------------------------------------------------------------------------------------
+# Finalizando
 arcpy.ResetEnvironments()
+print '# ' + '-' * 100
 print '# End'
+
