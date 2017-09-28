@@ -21,13 +21,12 @@ Fazer o *download* (ou cópia) do arquivo [Transformation.py](Scripts/Transforma
 Testado com as versões 10.3 e 10.5.
 
 ## Autor
-* **Michel Metran**, veja [outros projetos](https://michelmetran.com)
+* **Michel Metran**, veja [outros projetos](https://github.com/michelmetran).
 
 Veja também a lista de [colaboradores](https://github.com/michelmetran/ArcGIS-Transformation/settings/collaboration) que auxiliaram nesse projeto.
 
 ## Licença
 Esse projeto é licenciado sob a 'MIT License'.
-
 Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ## Referências
