@@ -1,7 +1,7 @@
 # coding: utf8
 '''
 # -------------------------------------------------------------------------------------------------------
-# TRANSFORMAÇÕES CUSTOMIZADAS ENTRE DATUM
+# TRANSFORMAÇÕES CUSTOMIZADAS ENTRE DATUMs
 # -------------------------------------------------------------------------------------------------------
 # Description: Creates a custom geographic transformation in the default directory.
 # C:\Users\[USER]\AppData\Roaming\ESRI\Desktop[VERSION]\ArcToolbox\CustomTransformations
