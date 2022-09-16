@@ -16,9 +16,9 @@ Por _default_, o ArcGIS dispõe de 14 maneiras diferentes para converter feiçõ
 _E para outros datum? Tais como Córrego Alegre e SIRGAS2000?_
 O objetivo desse _script_ é facilitar tais conversões, criando no ArcGIS, os parâmetros de transformação corretos, definidos pelo IBGE e outras instituições de pesquisa. Após criados, os parâmetros de transformação estarão disponíveis na ferramenta \*Data Management toolbox/**Project\***, do _ArcToolBox_, e nos parâmetros de transformação entre datum de _layers_ do mesmo _data-frame_, no **_ArcMap_**, conforme segue:
 
-![Project](docs/screenshots/Project.png)
+![Project](docs/screenshots/project.png)
 
-![Transformation](docs/screenshots/Transformation.png)
+![Transformation](docs/screenshots/transformation.png)
 
 <br>
 
